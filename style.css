@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: pink;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;                /* PERBAIKAN: sticky butuh top agar berfungsi */
+    z-index: 100;
+}
+
+.nav-kiri {
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.nav-kanan {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding-right: 20px;
+    margin: 0;             /* PERBAIKAN: hapus margin default ul */
+}
+
+.nav-kanan li a {
+    text-decoration: none;
+    color: white;
+}
+
+.home {
+    display: flex;
+    background-color: pink;
+    color: gray;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.home-kiri {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    flex: 1;
+}
+
+.home-kanan {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto {
+    width: 10cm;
+    height: auto;
+    border-radius: 8px;    /* BONUS: sedikit rounded agar lebih rapi */
+}
+
+/* PERBAIKAN: tambah style untuk tombol .btn yang ada di HTML tapi tidak ada di CSS */
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: pink;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    padding: 40px 20px;
+    background-color: pink;
+}
+
+.about div {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about div a {
+    text-decoration: none;
+    background-color: white;
+    color: pink;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.about div a:hover {
+    background-color: #f0f0f0;
+}
+
+/* BONUS: section contact yang ada di HTML */
+.contact {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #fff0f3;
+}
+
+.contact a {
+    color: hotpink;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color: pink;
+    padding: 10px;
+}
